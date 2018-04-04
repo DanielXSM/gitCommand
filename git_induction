@@ -20,6 +20,16 @@ git branch -d <name>  删除分支
 git pull   抓取远程仓库所有分支更新并合并到本地
 git fetch origin  抓取远程仓库更新
 git clone 克隆项目到本地
+git remote： 查看远程库的信息
+git remote -v ：查看远程库的详细信息
+cat XX   ：      查看XX文件内容
+git reflog  ：     查看历史记录的版本号id
+git diff  XX ：     查看XX文件修改了那些内容
+git push -u(第一次要用-u 以后不需要) origin master ：把当前master分支推送到远程库
+git stash list ：查看所有被隐藏的文件列表
+git stash apply ：恢复被隐藏的文件，但是内容不删除
+git stash drop： 删除文件
+git stash pop： 恢复文件的同时 也删除文件
 
 
 
