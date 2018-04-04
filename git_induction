@@ -3,9 +3,26 @@
 
 git 是以分支的形式存在的，更像是大树一样，他有一条主干，我们称他为master,master 主干是很最重要的分支，也往往赋予权限的保护，不可收到破坏。
 git branch 查看当前的所有分支，以及查看当前所在分支（*号标识当前所在分支）
+git checkout 切换分支的命令
 git status 查看当前的分支状态
 git add    将工作文件修改提交到本地暂存区
 git add .  将所有修改过的工作文件提交暂存区
-git rm --cached aa.txt  add aa.txt文件之后，从暂存区中删除该文件，to unstage
+git rm --cached aa.txt  add aa.txt文件之后,从暂存区中删除该文件,to unstage
+git commit -m ''  提交代码，会生成版本号,如果回滚的话可以执行命令  git reset --hard 'hash值'
+git push origin '推送分支名'  推送到远程服务器
+git push -f origin master   强制提交（-f）
+git log -3   查看最近3次的提交记录
+git checkout <name>  切换分支
+git branch <name> 创建分支
+git checkout -b <name>  创建+切换分支
+git merge <name>  合并某分支到当前分支
+git branch -d <name>  删除分支
+git pull   抓取远程仓库所有分支更新并合并到本地
+git fetch origin  抓取远程仓库更新
+git clone 克隆项目到本地
+
+
+
+
 
 
