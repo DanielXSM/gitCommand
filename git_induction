@@ -31,7 +31,16 @@ git stash apply ：恢复被隐藏的文件，但是内容不删除
 git stash drop： 删除文件
 git stash pop： 恢复文件的同时 也删除文件
 
-
+git 上传本地项目的处理流程
+#####################################################################################
+初始化本地仓库
+git init
+关联远程仓库，其中origin后跟的是，远程仓库的别名
+git remote add origin  https://github.com/DanielXSM/springboot_practice.git
+git add .(记得有个点哦，并且和add之间有空格)
+git commit -m "message"       其中message就是你提交文件时候的备注。以便知道本次提交是什么作
+push文件
+git push -u origin master
 
 
 
